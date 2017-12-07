@@ -1,0 +1,43 @@
+<h4>Welcome to Invoice Manager </h4>
+<p>Manage your Invoices.</p>
+
+
+<div class = "row">
+<button class= "btn btn-primary" (click)="onClicklist()"
+>Get Invoices List</button>
+</div>
+<div>
+<h4>Get Invoice information by id</h4>
+<form #form5="ngForm" (ngSubmit)="onClickId()">
+  
+
+  <label>ID </label>
+  <input type="text" name="id" [(ngModel)]="id">
+  
+ <button type="submit">Submit</button>
+</form>
+</div>
+{{server1}} 
+
+{{error}}
+
+      
+
+<ul class="list-group" *ngFor="let server of servers">
+        
+        <table>
+        <tr>Id {{ server.id }} </tr>
+        <tr>Total Amount {{server.amount_cents}}</tr>
+        <tr>Invoice created {{server.invoice_date}}</tr>
+        <tr>Due Date {{server.due_date}}</tr>
+        <tr>PO number {{server.po_number}}</tr>
+        <tr>Created At {{server.created_at}}</tr>
+        </table>
+        
+      </ul>
+      
+      
+        
+      
+      
+      

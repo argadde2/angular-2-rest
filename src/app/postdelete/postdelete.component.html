@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+    <div class="list-group">
+
+<label>ID</label>
+<input id="id" name = "id" type="text" [(ngModel)]="id" />
+<form #form1="ngForm" (ngSubmit)="putForm(form1.value)">
+  
+
+  <label>PO number </label>
+  <input type="text" name="po_number" ngModel>
+
+  <label>Invoice date</label>
+  <input type="text" name="invoice_date" ngModel>
+
+  <label>Due date</label>
+  <input type="text" name="due_date" ngModel>
+
+  <label>Amount in Cents</label>
+  <input type="text" name="amount_cents" ngModel>
+  
+
+  <button type="submit">Submit</button>
+</form>
+</div>
+</div>
+</div>
+
+
+<div class = "row">
+<h4>Delete the invoice with Id</h4>
+
+<form #form4="ngForm" (ngSubmit)="deleteById()">
+  
+
+  <label>ID </label>
+  <input type="text" name="id1" [(ngModel)]="id1">
+  
+ <button type="submit">Submit</button>
+</form> 
+
+</div>

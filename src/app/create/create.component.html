@@ -1,0 +1,26 @@
+
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+    <div class="list-group">
+
+<form #form2="ngForm" (ngSubmit)="postForm(form2.value)">
+  
+
+  <label>PO number </label>
+  <input type="text" name="po_number" ngModel>
+
+  <label>Invoice date</label>
+  <input type="text" name="invoice_date" ngModel>
+
+  <label>Due date</label>
+  <input type="text" name="due_date" ngModel>
+
+  <label>Amount in Cents</label>
+  <input type="text" name="amount_cents" ngModel>
+  
+
+  <button type="submit">Submit</button>
+</form>
+</div>
+</div>
+</div>

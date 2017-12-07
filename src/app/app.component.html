@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+      
+        <li role="presentation" class="active"><a routerLink="/" data-toggle = "tab">Home</a></li>
+        <li role="presentation"><a routerLink="/create" data-toggle = "tab"> Create Invoices</a></li>
+        <li role="presentation"><a routerLink="/put" data-toggle = "tab">Update invoices</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+   <router-outlet></router-outlet>
+    </div>
+  </div>
+  
+  </div>
+
+
+
+</body>
+</html>
